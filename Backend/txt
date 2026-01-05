@@ -1,0 +1,38 @@
+travel-planner-server/
+│
+├── config/                 # Cấu hình hệ thống
+│   └── db.js               # Code kết nối MongoDB
+│
+├── controllers/            # Logic xử lý (Code chính nằm ở đây)
+│   ├── authController.js
+│   ├── placeController.js
+│   ├── itineraryController.js
+│   ├── bookingController.js
+│   ├── expenseController.js
+│   └── reportController.js
+│
+├── models/                 # Định nghĩa Database Schema (Mongoose)
+│   ├── User.js
+│   ├── Place.js
+│   ├── Itinerary.js
+│   ├── Event.js
+│   ├── Booking.js
+│   └── Expense.js
+│
+├── routes/                 # Định nghĩa các đường dẫn API (Endpoints)
+│   ├── authRoutes.js
+│   ├── placeRoutes.js
+│   ├── itineraryRoutes.js
+│   └── ... (tương tự cho các resource khác)
+│
+├── middleware/             # Các hàm trung gian (Check đăng nhập, upload ảnh)
+│   ├── authMiddleware.js   # Kiểm tra token JWT
+│   └── errorMiddleware.js  # Xử lý lỗi chung
+│
+├── utils/                  # Các hàm tiện ích & Seed data
+│   ├── seeder.js           # Script để tạo dữ liệu demo (Quan trọng theo đề bài)
+│   └── generateToken.js    # Hàm tạo JWT
+│
+├── .env                    # Biến môi trường (Tuyệt đối không up lên Git)
+├── server.js               # File chạy chính (Entry point)
+└── package.json

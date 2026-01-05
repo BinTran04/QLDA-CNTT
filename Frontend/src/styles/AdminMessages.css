@@ -1,0 +1,23 @@
+@keyframes flashRed {
+  0% {
+    background-color: #fff1f0; /* Đỏ rất nhạt */
+    border-left: 4px solid #ffccc7;
+  }
+  50% {
+    background-color: #ffccc7; /* Đỏ đậm hơn chút */
+    border-left: 4px solid #f5222d; /* Viền đỏ đậm */
+  }
+  100% {
+    background-color: #fff1f0;
+    border-left: 4px solid #ffccc7;
+  }
+}
+
+.unread-room {
+  animation: flashRed 2s infinite ease-in-out; /* Nhấp nháy mỗi 2 giây */
+}
+
+.unread-room:hover {
+  background-color: #ffe7ba !important; /* Đổi màu khi di chuột vào */
+  animation: none; /* Dừng nháy khi hover để dễ nhìn */
+}

@@ -1,0 +1,26 @@
+/* Frontend/src/styles/UserMessages.css */
+
+@keyframes flashRed {
+  0% {
+    background-color: #fff1f0;
+    border-left: 4px solid #ffccc7;
+  }
+  50% {
+    background-color: #ffccc7;
+    border-left: 4px solid #f5222d;
+  }
+  100% {
+    background-color: #fff1f0;
+    border-left: 4px solid #ffccc7;
+  }
+}
+
+/* ĐÃ ĐỔI TÊN CLASS TỪ .unread-room THÀNH .unread-room-user CHO KHỚP */
+.unread-room-user {
+  animation: flashRed 2s infinite ease-in-out;
+}
+
+.unread-room-user:hover {
+  background-color: #ffe7ba !important;
+  animation: none;
+}
